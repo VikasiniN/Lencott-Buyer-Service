@@ -15,4 +15,30 @@ exports.viewSingleProducts = function (req, res) {
         console.log(error);
     }
 }
+exports.viewAllProducts = function (req, res) {
+    try {
+        viewProductDA.viewAllProducts(req, res);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+exports.getProductSettings = function (req, res) {
+    try {
+        viewProductDA.getProductSettings(req, res);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+exports.filterByColor = function (req, res) {
+    try {
+        viewProductDA.filterByColor(req, res);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
 
